@@ -116,8 +116,13 @@ nav {
   padding: 10px 60px;
   font-weight: 600;
   font-size: 1.25rem;
-  border: none;
+  border: 1px solid #f0aa00;
   border-radius: 12px;
+}
+.nav-btn:hover {
+  background-color: #ffff;
+  color: #f0aa00;
+  transition: 0.7s;
 }
 .nav-icon i {
   font-size: 2.1rem;
@@ -215,17 +220,28 @@ nav {
 }
 .curriculum-icon {
   gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 80px 478px 60px;
+  padding: 80px 0 60px;
 }
 .chevron-left,
 .chevron-right {
   padding: 17px 20px;
-
+  border: 1px solid #fea301;
   font-size: 1.5rem;
   border-radius: 50%;
+}
+
+.chevron-right:hover{
+background-color: #fff;
+color: #fea301;
+transition: .6s;
+}
+.chevron-left:hover{
+background-color: #fff;
+color: #fea301;
+transition: .6s;
 }
 
 /* curriculum section end */
@@ -305,9 +321,7 @@ nav {
   border-radius: 47px;
 }
 .card-3-bgc {
- 
-  background-color: #5D58F0;
- 
+  background-color: #5d58f0;
 }
 .stories-card-date-btn:hover {
   background-color: #e1f1514b;
@@ -426,25 +440,24 @@ nav {
 
 @media screen and (max-width: 576px) {
   /* header part start */
- header{
-  padding: 0;
- }
+  header {
+    padding: 0;
+  }
   .nav-title,
   .nav-links,
   .nav-btn {
     display: none;
   }
-  nav{
+  nav {
     padding: 0;
   }
-.logo{
-  display: flex;
-  justify-content: space-between;
-  border: .6px solid orange;
-  padding: 12px 16px;
-  gap: 299px;
-
- }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    border: 0.6px solid orange;
+    padding: 12px 16px;
+    gap: 299px;
+  }
   .m-tag {
     font-size: 1.2rem;
     margin-top: 14px;
@@ -528,7 +541,7 @@ nav {
     padding: 7px 37px;
     font-weight: 700;
     font-size: 1rem;
-}
+  }
   /* main part end */
   /* footer part start */
   .footer {
